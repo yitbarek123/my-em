@@ -1,0 +1,61 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu:xenial
+    working_directory: ~/singnet
+    environment:
+      VA_PORT: 7035
+      RELEX_PORT: 7034
+    steps:
+      - checkout
+      - run:
+          name: Install Opencog
+          command: |
+            apt-get update
+            apt-get install -y \
+              apt-utils \
+              git \
+              wget \
+              curl \
+              apt-transport-https \
+              ca-certificates \
+              gnupg
+            echo 'deb https://dl.bintray.com/octool/deb-pkgs xenial main' \
+              >  /etc/apt/sources.list.d/opencog.list
+            apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D401AB61
+            apt-get update
+            apt-get install -y libcogutil-dev
+            apt-get install -y atomspace-dev
+            apt-get install -y guile-2.2-dev
+            apt-get install -y opencog-dev
+            apt-get install -y python3.5-dev
+            ldconfig
+            git clone https://github.com/aconchillo/guile-json.git
+            cd guile-json
+            apt-get install -y dh-autoreconf
+            autoreconf -vif
+            ./configure --prefix=/usr --libdir=/usr/lib/x86_64-linux-gnu
+            make
+            make install
+      - run:
+          name: Unity and functional tests
+          command: |
+            ./scripts/ci-local-tests.sh
+  build-session-manager:
+        docker:
+          - image: solmn/session-manager:new
+        steps:
+            - checkout
+            - run:
+                name: "install requirements"
+                command: python3.6 -m pip install -r session-manager/requirements.txt
+            - run:
+                name: "test session manager server"
+                command: './session-manager/circle_ci_session_manager_test.sh'
+workflows:
+  version: 2
+  build_dockers:
+    jobs:
+      - build
+      - build-session-manager

@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+import "opencog_services.proto";
+
+package session_manager;
+
+// Login request message
+message LoginInput {
+    string username = 1;
+    string password = 2;
+    string device_name = 3;
+}
+
+// Login response message
+message LoginOutput {
+    int32 status = 1;
+    string access_token = 2;
+}
+
+// Logout request message
+message LogoutInput {
+    string device_name = 1;
+}
+
+// Logout response message
+message LogoutOutput {
+    int32 status = 1;
+}
+
+message Animation {
+    string name = 1;
+    int64 duration = 2;
+}
+
+// The animation to play before, during and after speaking the utterance.
+message Emotion {
+    Animation before = 1;
+    Animation during = 2;
+    Animation after = 3;
+}
+
+// Utterance request message
+message UtteranceInput {
+    string utterance = 1;
+}
+
+// Utterance response message
+message UtteranceOutput {
+    string utterance = 1;
+    Emotion emotion = 2;
+}
+
+// Geolocation request message
+message GeolocationInput {
+    float longitude = 1;
+    float latitude = 2;
+}
+
+// Geolocation response message
+message GeolocationOutput {
+    int32 status = 1;
+}
+
+service SessionManager {
+    // Service definitions
+    rpc Login(LoginInput) returns (LoginOutput) {}
+    rpc Logout(LogoutInput) returns (LogoutOutput) {}
+    rpc Utterance(UtteranceInput) returns (UtteranceOutput) {}
+    rpc Prompt(opencog_services.Command) returns (opencog_services.CommandOutput) {}
+    rpc Geolocation(GeolocationInput) returns (GeolocationOutput) {}
+    rpc Reset(opencog_services.Command) returns (opencog_services.CommandOutput) {}
+} 

@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package restaurant_info;
+
+message Info {
+    string text = 1;
+    string scm = 2;
+}
+
+message RestaurantInfos {
+    Info name = 1;
+    Info address = 2;
+    Info telephone_number = 3;
+    Info websites = 4;
+    Info rating = 5;
+    Info total_review = 6;
+    Info geolocation = 7;
+    Info price_range = 8;
+    Info opening_hours = 9;
+    repeated Info cuisines = 10;
+    repeated Info reviews = 11;
+}
+
+// Geolocation request message
+message GeolocationInput {
+    int32 longitude = 1;
+    int32 latitude = 2;
+    int32 radius = 3;
+}
+
+// Restaurant info response message
+message RestaurantInfosOutput {
+    repeated RestaurantInfos restaurants = 1;
+}
+
+service RestaurantInfo {
+    // Service definitions
+    rpc GetInfo(GeolocationInput) returns (RestaurantInfosOutput) {}
+} 

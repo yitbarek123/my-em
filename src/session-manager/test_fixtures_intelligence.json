@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "username": "test",
+            "password": "test"
+        }
+    ],
+    "services": [
+        {
+            "name": "OPENCOG_SERVICES",
+            "host": "va_test_intelligence_va_ai_container",
+            "port": "7032"
+        }
+    ]
+}

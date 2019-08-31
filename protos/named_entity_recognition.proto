@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package named_entity_recognition;
+
+message EntityRecognitionInput {
+    string value = 1;
+}
+
+message EntityRecognitionOutput {
+    string value = 1;
+}
+
+service RecognizeEntity {
+    rpc Recognize(EntityRecognitionInput) returns (EntityRecognitionOutput) {}
+}

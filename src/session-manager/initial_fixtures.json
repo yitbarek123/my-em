@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "transcendental_robot"
+        }
+    ],
+    "services": [
+        {
+            "name": "OPENCOG_SERVICES",
+            "host": "va_ai_container",
+            "port": "7032"
+        }
+    ]
+}

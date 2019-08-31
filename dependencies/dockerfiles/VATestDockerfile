@@ -1,0 +1,4 @@
+FROM va_cpp_grpc
+RUN apt-get install libboost-all-dev -y
+WORKDIR /test
+CMD bash

@@ -1,0 +1,173 @@
+urge: (recommend_restaurant=1)
+goal: (recommend_restaurant=1)
+
+r: ASK_RECOMMENDATION_1 ([recommend find] * [restaurant place something])
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+r: ASK_RECOMMENDATION_2 (any * recommendation)
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+r: ASK_RECOMMENDATION_3 (_*1 * [restaurant place] ^synonym(_0, recommend))
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+r: ASK_RECOMMENDATION_4 (recommend * _*1 ^isa('_0, restaurant))
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+r: ASK_RECOMMENDATION_5 (_*1 * _*1 ^synonym(_0, recommend) ^isa('_1, restaurant))
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+?: ASK_RECOMMENDATION_6 (where)
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+r: ASK_RECOMMENDATION_7 (look [for around])
+   ^reuse(ASK_RECOMMENDATION)
+   ^keep()
+
+r: ASK_RECOMMENDATION (-)
+   ^analyze_known_cuisine_preference()
+   ^keep()
+
+   j1: MISS_PREFERENCE (^is_unknown_cuisine_preference())
+       Sure ^get_name(user),
+       I know what ^get_name(known-cuisine-preference) like.
+       Would you like me to check with ^get_name(unknown-cuisine-preference)?
+
+       j2: ([yes sure])
+           ^retrieve_unknown_cuisine_preference()
+           ^analyze_retrieved_cuisine_preference()
+
+           j3: ALL_PREFERENCE_KNOWN (^is_no_unknown_cuisine_preference())
+               Hi ^get_name(user), ^get_name(retrieved-cuisine-preference) like ^get_preference(retrieved-cuisine).
+
+               j4: IS_PREFERENCE_CONFLICT (^is_conflicted_cuisine_preference())
+                   I know ^get_name(conflicted-cuisine-preference) isn't too keen on ^get_preference(conflicted-cuisine).
+
+                   j5: IS_INFERRED_CUISINE (^is_inferred_cuisine())
+                       Do you want me to check on the reviews of the local ^get_preference(inferred-cuisine) restaurants?
+
+                       j6: ([yes sure])
+                           ^find_restaurant()
+
+                           j7: RECOMMENDATION_AVAILABLE_1 (^is_recommendation_available())
+                               Hi ^get_name(user), I found ^get_recommendation() with good ratings. Would you like to hear some recent reviews from them?
+
+                               j8: ([yes sure])
+                                   ^reuse(ASK_REVIEW)
+
+               j4: IS_NO_PREFERENCE_CONFLICT (^is_no_conflicted_cuisine_preference())
+                   ^reuse(IS_INFERRED_CUISINE)
+
+   j1: MISS_CUISINE (^is_cuisine_missing())
+       Any preferences on cuisine?
+
+       j2: NO_CUISINE_PREFER ([no not don't whatever suprise you])
+           ^set_used(MISS_CUISINE)
+           ^reuse(ASK_RECOMMENDATION)
+
+       j2: CUISINE_REDIRECT (*) ^reuse(ASK_RECOMMENDATION)
+
+   j1: MISS_PAX (^is_pax_missing())
+       Who will be attending?
+
+       j2: PAX_REDIRECT (*) ^reuse(ASK_RECOMMENDATION)
+
+   j1: MISS_DATE (^is_date_missing())
+       When do you want to go?
+
+       j2: DATE_REDIRECT (*) ^reuse(ASK_RECOMMENDATION)
+
+   j1: MISS_TIME (^is_time_missing())
+       What time do you want to go?
+
+       j2: TIME_REDIRECT (*) ^reuse(ASK_RECOMMENDATION)
+
+   j1: FIND_RESTAURANT ()
+       ^find_restaurant()
+       ^start_timer(rec_timer)
+       j2: RECOMMENDATION_AVIALABLE(^is_reserved_before())
+           [^get_em_reserved() was your choice. Would you like to make it again?]
+           j3: ([yes sure])
+               ^reuse(ASK_RESERVATION)
+           j3: ([no don't])
+               ^reuse(RECOMMENDATION_AVAILABLE_2)
+
+       j2: RECOMMENDATION_AVAILABLE_2 (^is_recommendation_available())
+           [^get_recommendation() have availability. Would you like me to make a reservation?]
+           [^get_recommendation() have availability. Would you like me to make a reservation for ^get_reservation_pax()?]
+           [^get_recommendation() have availability. Shall I book a table for ^get_reservation_pax()?]
+           [^get_recommendation() have availability. Would you like me to reserve a table?]
+           [^get_recommendation() have availability. Would you like me to reserve a table for ^get_reservation_pax()?]
+
+           j3: ([yes sure])
+               ^reuse(ASK_RESERVATION)
+
+       j2: RECOMMENDATION_TIMEOUT (^is_after_min(0.2, rec_timer))
+           Sorry, no recommendation was found.
+
+r: ASK_REVIEW_1 ([read hear best] * [review comment])
+   ^reuse(ASK_REVIEW)
+   ^keep()
+
+r: ASK_REVIEW_2 (_*1 * [review comment] ^synonym(_0, read))
+   ^reuse(ASK_REVIEW)
+   ^keep()
+
+r: ASK_REVIEW (-)
+   ^retrieve_review()
+   ^start_timer(review_timer)
+   ^keep()
+
+   j1: REVIEW_AVAILABLE (^is_review_available())
+       Here are recent reviews for the ^get_review()
+
+   j1: REVIEW_TIMEOUT (^is_after_min(0.2, review_timer))
+       Sorry, no review was found.
+
+r: ASK_RESERVATION_1 (go [with to] _* ^is_restaurant('_0))
+   ^reuse(ASK_RESERVATION)
+   ^keep()
+
+r: ASK_RESERVATION_2 ([make book place] a reservation)
+   ^reuse(ASK_RESERVATION)
+   ^keep()
+
+r: ASK_RESERVATION_3 ([book reserve] a table)
+   ^reuse(ASK_RESERVATION)
+   ^keep()
+
+r: ASK_RESERVATION_4 (_* sounds [good perfect great nice awesome] ^is_restaurant('_0))
+   ^reuse(ASK_RESERVATION)
+   ^keep()
+
+r: ASK_RESERVATION_5 ([take pick choose opt select want need] _* ^is_restaurant('_0))
+   ^reuse(ASK_RESERVATION)
+   ^keep()
+
+r: ASK_RESERVATION (-)
+   ^keep()
+
+   j1: MISS_RESTAURANT (^is_restaurant_missing())
+       Which restaurant do you want to go?
+
+       j2: RESTAURANT_REDIRECT (*) ^reuse(ASK_RESERVATION)
+
+   j1: MAKE_RESERVATION ()
+       ^make_reservation()
+       ^start_timer(reserve_timer)
+       ^reuse(ASK_RESERVATION)
+
+   j1: RESERVED (^is_reserved_successfully())
+       ^va-em-add-reservation()
+       [I've made a reservation ^get_reservation_details() under your name. I'll add the reservation details to your calendar.]
+       [I've booked a table ^get_reservation_details() under your name. I'll add the reservation details to your calendar.]
+       [The reservation has been made under your name for ^get_reservation_time()]
+       [All done. Reservation is for ^get_reservation_time()]
+
+   j1: RESERVE_TIMEOUT (^is_after_min(0.2, reserve_timer))
+       Sorry, no reservation was made.

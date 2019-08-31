@@ -1,0 +1,4034 @@
+[2019-08-13 10:21:24:688] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:21:24:688] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:21:24:688] [WARN] Offending clauses=(EvaluationLink
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:21:24:693] [ERROR] Backtrace:
+           5 (opencog-extension cog-execute! (#))
+           4 (apply-smob/1 #<catch-closure 7fa8fb247fe0>)
+           3 (apply-smob/1 #<catch-closure 7fa8fb247b60>)
+In current input:
+      1:0  2 (get-time-atm _)
+In ice-9/boot-9.scm:
+   751:25  1 (dispatch-exception 0 wrong-number-of-args (#f "Wrong number of arguments to ~A" (#<procedure get-time-at…>) …))
+In unknown file:
+           0 (apply-smob/1 #<catch-closure 7fa8fb247b20> wrong-number-of-args #f "Wrong number of arguments to ~A" (#<pr…>) …)
+
+ERROR: In procedure apply-smob/1:
+Wrong number of arguments to #<procedure get-time-atm (atm)>
+ABORT: wrong-number-of-args
+ (/home/dagiopia/opencog/atomspace/opencog/guile/SchemeEval.cc:1066)
+	Stack Trace:
+	2: basic_string.h:211	??()
+	3: Logger.cc:525	  opencog::Logger::Error::operator()(char const*, ...)
+	4: exceptions.cc:55	  opencog::StandardException::parse_error_message(char const*, __va_list_tag*, bool)
+	5: exceptions.cc:82	  opencog::StandardException::parse_error_message(char const*, char const*, __va_list_tag*, bool)
+	6: exceptions.cc:142	  opencog::RuntimeException::RuntimeException(char const*, char const*, ...)
+	7: SchemeEval.cc:1066	  opencog::SchemeEval::apply_v(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, opencog::Handle)
+	8: shared_ptr.h:499	??()
+	9: EvaluationLink.cc:855	  opencog::EvaluationLink::do_eval_scratch(opencog::AtomSpace*, opencog::Handle const&, opencog::AtomSpace*, bool)
+	10: shared_ptr_base.h:712	??()
+	11: DefaultPatternMatchCB.cc:828	  opencog::DefaultPatternMatchCB::eval_sentence(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&)
+	12: PatternMatchEngine.cc:2207	  opencog::PatternMatchEngine::explore_clause(opencog::Handle const&, opencog::Handle const&, opencog::Handle const&)
+	13: InitiateSearchCB.cc:809	  opencog::InitiateSearchCB::variable_search(opencog::PatternMatchEngine*)
+	14: PatternLinkRuntime.cc:328	  opencog::PatternLink::satisfy(opencog::PatternMatchCallback&) const
+	15: stl_tree.h:923	??()
+	16: new_allocator.h:111	??()
+	17: Instantiator.cc:598	  opencog::Instantiator::instantiate(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&, bool)
+	18: stl_tree.h:949	??()
+	19: ExecSCM.cc:31	ss_execute()
+	20: SchemeModule.cc:69	  opencog::FunctionWrap::as_wrapper_v_h(opencog::Handle)
+	21: shared_ptr_base.h:683	??()
+	22: SchemePrimitive.cc:162	  opencog::PrimitiveEnviron::do_call(scm_unused_struct*, scm_unused_struct*)
+	23: [0xb130c] ??() ??:0
+	24: [0xbb137] ??() ??:0
+	25: [0x3e7e7] ??() ??:0
+	26: [0x3e843] ??() ??:0
+	27: [0x89f30] ??() ??:0
+	28: [0x551ad] ??() ??:0
+	29: [0x37a4a] ??() ??:0
+	30: [0xb88ff] ??() ??:0
+	31: [0xbb137] ??() ??:0
+	32: [0xa9da2] ??() ??:0
+	33: [0x38030] ??() ??:0
+	34: [0x380c5] ??() ??:0
+	35: [0xa89ec] ??() ??:0
+	36: misc.c:2092	GC_call_with_stack_base()
+	37: [0xa8d08] ??() ??:0
+	38: [0x55342] ??() ??:0
+	39: [0x994] ??() ??:0
+	40: libc-start.c:344	__libc_start_main()
+	41: [0xa2a] ??() ??:0
+
+[2019-08-13 10:21:39:920] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:21:39:920] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:21:39:920] [WARN] Offending clauses=(EvaluationLink
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:564] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:564] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:564] [WARN] Offending clauses=(EvaluationLink
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:565] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:565] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:565] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:565] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:565] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:566] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:566] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:566] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:566] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:566] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:567] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:567] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:567] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:567] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:568] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:568] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:568] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:568] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:568] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:569] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:569] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:569] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:569] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:569] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:570] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:570] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:570] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:570] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:570] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:571] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:571] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:571] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:571] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:571] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:572] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:572] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:572] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:572] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:572] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:572] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:572] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:572] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:572] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:573] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:573] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:573] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:573] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:573] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:574] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:574] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:574] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:574] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:574] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:574] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:574] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:574] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:574] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:575] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:575] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:575] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:575] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:575] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:576] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:576] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:576] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:576] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:576] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:576] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:576] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:576] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:576] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:577] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:577] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:577] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:577] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:577] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:578] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:578] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:578] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:578] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:578] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:578] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:578] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:578] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:578] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:579] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:579] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:579] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:579] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:579] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:580] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:580] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:580] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:580] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:580] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:580] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:580] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:580] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:580] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:581] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:581] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:581] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:581] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:581] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:581] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:581] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:581] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:581] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:582] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:582] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:582] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:582] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:582] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:582] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:582] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:582] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:582] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:583] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:583] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:583] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:583] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:583] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:583] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:584] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:584] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:584] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:584] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:584] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:584] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:585] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:585] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:585] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:585] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:585] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:585] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:585] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:585] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:585] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:586] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:586] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:586] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:586] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:586] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:586] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:586] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:586] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:586] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:587] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:587] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:587] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:587] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:587] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:587] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:587] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:587] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:587] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:588] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:588] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:588] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:588] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:588] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:588] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:588] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:588] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:588] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:589] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:589] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:589] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:589] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:589] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:589] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:589] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:589] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:589] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:590] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:590] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:590] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:590] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:590] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:590] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:591] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:591] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:591] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:591] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:591] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:591] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:591] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:591] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:591] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:592] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:592] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:592] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:592] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:592] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:592] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:592] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:592] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:592] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:593] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:593] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:593] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:593] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:593] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:593] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:594] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:594] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:594] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:594] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:594] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:594] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:595] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:595] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:595] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:596] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:596] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:596] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:596] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:596] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:596] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:597] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:597] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:597] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:598] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:598] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:598] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:598] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:598] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:598] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:599] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:599] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:599] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:599] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:599] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:599] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:600] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:600] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:600] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:600] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:600] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:600] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:601] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:601] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:601] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:601] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:601] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:601] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:601] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:601] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:601] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:602] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:602] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:602] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:602] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:602] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:602] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:602] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:602] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:602] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:603] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:603] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:603] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:603] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:603] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:603] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:606] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:606] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:606] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:607] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:607] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:607] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:607] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:607] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:607] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:607] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:607] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:607] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:608] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:608] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:608] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:608] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:608] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:608] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:609] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:609] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:609] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:609] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:609] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:609] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:610] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:610] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:610] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:610] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:610] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:610] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:610] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:610] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:610] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:611] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:611] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:611] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:611] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:611] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:611] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:612] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:612] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:612] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:612] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:612] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:612] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:613] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:613] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:613] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:613] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:613] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:613] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:613] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:613] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:613] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:614] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:614] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:614] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:614] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:614] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:614] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:615] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:615] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:615] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:615] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:615] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:615] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:616] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:616] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:616] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:616] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:616] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:616] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:617] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:617] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:617] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:617] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:617] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:617] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:617] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:617] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:617] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:618] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:618] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:618] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:618] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:618] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:618] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:619] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:619] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:619] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:619] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:619] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:619] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:620] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:620] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:620] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:620] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:620] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:620] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:620] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:620] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:620] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:621] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:621] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:621] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:621] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:621] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:621] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:622] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:622] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:622] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:622] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:622] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:622] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:623] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:623] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:623] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:623] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:623] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:623] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:624] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:624] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:624] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:624] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:624] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:624] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:624] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:625] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:625] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:625] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:625] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:625] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:625] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:625] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:625] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:626] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:626] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:626] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:626] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:626] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:626] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:627] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:627] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:627] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:627] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:627] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:627] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:628] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:628] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:628] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:628] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:628] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:628] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:628] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:628] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:628] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:629] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:629] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:629] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:629] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:629] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:629] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:630] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:630] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:630] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:630] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:630] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:630] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:631] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:631] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:631] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:631] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:631] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:631] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:632] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:632] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:632] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:632] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:632] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:632] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:633] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:633] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:633] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:633] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:633] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:633] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:634] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:634] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:634] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:634] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:634] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:634] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:635] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:635] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:635] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:635] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:635] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:635] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:635] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:636] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:636] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:636] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:636] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:636] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:636] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:636] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:636] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:637] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:637] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:637] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:637] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:637] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:637] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:638] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:638] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:638] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:638] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:638] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:638] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:639] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:639] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:639] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:639] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:639] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:639] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:640] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:640] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:640] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:640] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:640] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:640] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:641] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:641] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:641] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:641] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:641] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:641] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:642] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:642] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:642] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:642] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:642] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:642] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:643] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:643] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:643] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:643] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:643] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:643] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:644] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:644] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:644] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:644] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:644] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:644] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:645] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:645] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:645] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:645] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:645] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:645] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:646] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:646] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:646] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:646] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:646] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:646] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:647] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:647] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:647] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:647] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:647] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:647] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:648] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:648] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:648] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:648] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:648] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:648] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:649] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:649] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:649] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:649] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:649] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:649] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:650] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:650] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:650] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:650] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:650] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:650] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:651] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:651] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:651] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:651] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:651] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:651] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:652] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:652] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:652] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:652] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:652] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:652] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:653] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:653] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:653] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:653] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:653] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:653] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:654] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:654] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:654] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:657] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:657] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:657] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:658] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:658] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:658] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:658] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:658] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:658] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:659] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:659] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:659] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:659] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:659] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:659] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:660] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:660] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:660] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:661] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:661] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:661] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:661] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:661] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:661] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:662] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:662] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:662] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:662] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:662] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:662] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:663] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:663] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:663] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:663] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:663] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:663] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:664] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:664] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:664] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:664] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:664] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:664] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:665] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:665] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:665] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:665] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:665] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:665] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:666] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:666] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:666] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:666] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:666] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:666] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:667] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:667] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:667] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:668] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:668] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:668] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:668] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:668] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:668] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:669] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:669] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:669] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:669] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:669] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:669] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:670] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:670] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:670] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:670] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:670] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:670] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:671] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:671] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:671] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:671] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:671] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:671] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:672] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:672] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:672] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:673] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:673] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:673] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:673] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:673] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:673] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:674] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:674] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:674] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:674] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:674] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:674] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:675] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:675] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:675] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:675] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:675] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:675] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:676] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:676] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:676] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:677] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:677] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:677] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:677] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:677] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:677] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:678] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:678] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:678] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:678] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:678] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:678] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:679] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:679] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:679] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:679] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:679] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:679] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:680] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:680] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:680] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:681] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:681] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:681] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:681] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:681] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:681] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:682] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:682] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:682] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:682] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:682] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:682] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:683] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:683] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:683] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:683] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:683] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:683] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:684] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:684] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:684] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:685] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:685] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:685] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:685] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:685] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:685] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:686] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:686] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:686] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:686] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:686] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:686] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:687] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:687] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:687] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:688] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:688] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:688] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:688] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:688] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:688] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:689] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:689] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:689] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:689] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:689] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:689] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:690] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:690] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:690] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:691] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:691] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:691] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:691] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:691] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:691] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:692] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:692] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:692] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:692] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:692] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:692] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:693] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:693] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:693] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:694] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:694] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:694] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:694] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:694] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:694] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:695] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:695] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:695] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:695] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:695] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:695] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:696] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:696] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:696] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:697] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:697] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:697] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:697] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:697] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:697] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:698] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:698] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:698] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:698] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:698] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:698] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:699] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:699] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:699] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:700] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:700] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:700] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:700] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:700] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:700] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:701] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:701] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:701] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:702] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:702] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:702] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:702] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:702] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:702] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:703] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:703] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:703] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:703] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:703] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:703] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:704] [WARN] No type restrictions! Your code has a bug in it!
+[2019-08-13 10:22:05:704] [WARN] Offending variable=(VariableNode "$V") ; [4586599313840214856][1]
+
+
+[2019-08-13 10:22:05:704] [WARN] Offending clauses=(EvaluationLink (stv 1.000000 1.000000)
+  (GroundedPredicateNode "scm: get-time-atm") ; [861516704455903649][1]
+  (ListLink
+    (ConceptNode "abebe") ; [7876707228673807819][1]
+    (VariableNode "$V") ; [4586599313840214856][1]
+  ) ; [9345173864504989877][1]
+) ; [9292692650434992382][1]
+
+
+[2019-08-13 10:22:05:704] [ERROR] Infinite Loop detected! Recursed 301 times! (/home/dagiopia/opencog/atomspace/opencog/query/InitiateSearchCB.cc:752)
+	Stack Trace:
+	2: basic_string.h:211	??()
+	3: Logger.cc:525	  opencog::Logger::Error::operator()(char const*, ...)
+	4: exceptions.cc:55	  opencog::StandardException::parse_error_message(char const*, __va_list_tag*, bool)
+	5: exceptions.cc:82	  opencog::StandardException::parse_error_message(char const*, char const*, __va_list_tag*, bool)
+	6: exceptions.cc:142	  opencog::RuntimeException::RuntimeException(char const*, char const*, ...)
+	7: InitiateSearchCB.cc:753	  opencog::InitiateSearchCB::variable_search(opencog::PatternMatchEngine*)
+	8: PatternLinkRuntime.cc:328	  opencog::PatternLink::satisfy(opencog::PatternMatchCallback&) const
+	9: stl_tree.h:923	??()
+	10: new_allocator.h:111	??()
+	11: Instantiator.cc:455	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	12: shared_ptr.h:119	??()
+	13: Context.h:57	??()
+	14: Instantiator.cc:503	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	15: Context.h:57	??()
+	16: Instantiator.cc:503	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	17: Instantiator.cc:626	  opencog::Instantiator::instantiate(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&, bool)
+	18: shared_ptr.h:499	??()
+	19: DefaultPatternMatchCB.cc:828	  opencog::DefaultPatternMatchCB::eval_sentence(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&)
+	20: PatternMatchEngine.cc:2207	  opencog::PatternMatchEngine::explore_clause(opencog::Handle const&, opencog::Handle const&, opencog::Handle const&)
+	21: InitiateSearchCB.cc:809	  opencog::InitiateSearchCB::variable_search(opencog::PatternMatchEngine*)
+	22: PatternLinkRuntime.cc:328	  opencog::PatternLink::satisfy(opencog::PatternMatchCallback&) const
+	23: stl_tree.h:923	??()
+	24: new_allocator.h:111	??()
+	25: Instantiator.cc:455	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	26: shared_ptr.h:119	??()
+	27: Context.h:57	??()
+	28: Instantiator.cc:503	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	29: Context.h:57	??()
+	30: Instantiator.cc:503	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	31: Instantiator.cc:626	  opencog::Instantiator::instantiate(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&, bool)
+	32: shared_ptr.h:499	??()
+	33: DefaultPatternMatchCB.cc:828	  opencog::DefaultPatternMatchCB::eval_sentence(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&)
+	34: PatternMatchEngine.cc:2207	  opencog::PatternMatchEngine::explore_clause(opencog::Handle const&, opencog::Handle const&, opencog::Handle const&)
+	35: InitiateSearchCB.cc:809	  opencog::InitiateSearchCB::variable_search(opencog::PatternMatchEngine*)
+	36: PatternLinkRuntime.cc:328	  opencog::PatternLink::satisfy(opencog::PatternMatchCallback&) const
+	37: stl_tree.h:923	??()
+	38: new_allocator.h:111	??()
+	39: Instantiator.cc:455	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	40: shared_ptr.h:119	??()
+	41: Context.h:57	??()
+	42: Instantiator.cc:503	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	43: Context.h:57	??()
+	44: Instantiator.cc:503	  opencog::Instantiator::walk_tree(opencog::Handle const&, bool)
+	45: Instantiator.cc:626	  opencog::Instantiator::instantiate(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&, bool)
+	46: shared_ptr.h:499	??()
+	47: DefaultPatternMatchCB.cc:828	  opencog::DefaultPatternMatchCB::eval_sentence(opencog::Handle const&, std::map<opencog::Handle, opencog::Handle, std::less<opencog::Handle>, std::allocator<std::pair<opencog::Handle const, opencog::Handle> > > const&)
+	48: PatternMatchEngine.cc:2207	  opencog::PatternMatchEngine::explore_clause(opencog::Handle const&, opencog::Handle const&, opencog::Handle const&)
+	49: InitiateSearchCB.cc:809	  opencog::InitiateSearchCB::variable_search(opencog::PatternMatchEngine*)
+
